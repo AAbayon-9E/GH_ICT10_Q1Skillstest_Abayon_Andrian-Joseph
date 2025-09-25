@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <title>Q1Skills test - Abayon</title>
+</head>
+<body>
+<center>
+<h1>Kacha's Casa Menu</h1>
+<br>
+    <p>Size:</p>
+    <form>
+        <label>16Oz</label>
+        <input type="radio" id="Large" value="200" name="drinks"><br>
+        <label>12Oz</label>
+        <input type="radio" id="Small" value="150" name="drinks"><br>
+    </form>
+    
+    <h2>Menu:</h2>
+    <p>choose your fruit:</p>
+    <select>
+        <option>Watermelon🍉</option>
+        <option>Banana🍌</option>
+         <option>Mango🥭</option>
+        <option>Coconut🥥</option>
+    </select>
+
+        <br/><br/>
+
+    <p>Add-ons and toppings!</p>
+    <form>
+        <!-- Menu Items -->
+        <label>vanilla syrup</label>
+        <input type="checkbox" id="add-on1" value="50"><br>
+        <label>chocolate syrup</label>
+        <input type="checkbox" id="add-on2" value="50"><br>
+        <label>caramel syrup</label>
+        <input type="checkbox" id="add-on3" value="50"><br>
+        <label>Sprinkles</label>
+        <input type="checkbox" id="topping1" value="100"><br>
+        <label>Marshmallows</label>
+        <input type="checkbox" id="topping2" value="100"><br>
+
+        <!-- Customer Details -->
+        <h2>Customer Details:</h2>
+
+        <input type="text" id="name" placeholder="name"> <br>
+        <input type="text" id="place" placeholder="address">
+        <br>
+        <input type="text" id="number" placeholder="phone number"><br><br>
+
+
+        <input type="button" value="Order Now" py-click="order_up">
+    </form>
+</center> 
+<br/>
+    <div id="output" style="white-space: pre-wrap;"></div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
